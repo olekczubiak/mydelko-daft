@@ -3,20 +3,30 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const handleOnClick = () => {
+    alert("hello react!");
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Co tu będzie?!
         </p>
+        <button
+          className="my-button"
+          onClick={handleOnClick}
+        >
+          Click
+        </button>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Kliknij w repo!
         </a>
       </header>
     </div>
